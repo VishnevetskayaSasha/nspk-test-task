@@ -1,0 +1,64 @@
+@import url(./vendor/fonts/font.css);
+@import url(./vendor/normalize.css);
+
+.main {
+  font-family: "Gotham", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.3;
+  color: #0D0D0D;
+  margin: 0 auto;
+}
+.main-banner {
+}
+.main-banner__bg {
+  background: linear-gradient(180deg, #EAE9FF 0%, rgba(255, 255, 255, 0.5) 100%);
+}
+.wrapper {
+  width: 1120px;
+  margin: 0 auto;
+}
+.main-banner__content {
+  display: flex;
+  padding: 64px 0 40px;
+  gap: 20px;
+}
+.main-banner__text-content {
+  align-self: center;
+}
+.title {
+  font-family: "Gotham", sans-serif;
+  margin: 0;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.title_main{
+  font-size: 40px;
+}
+.text {
+  font-size: 18px;
+}
+.text_main-banner {
+  margin: 20px 0 32px;
+}
+.button-box {
+  display: flex;
+  gap: 20px;
+}
+.button {
+  padding: 11px 24px 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 16px;
+}
+.button_color {
+  font-weight: 500;
+  color: #FFFFFF;
+  background-color: #4D35AF;
+}
+.button_border {
+  border: 1px solid #6A50D2;
+  color: #6A50D2;
+}
+.main-banner__img {
+}
