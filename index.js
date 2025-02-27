@@ -11,7 +11,11 @@ inputSearch.addEventListener("input", function() {
   const query = this.value.toLowerCase();
   const results = bancs.filter(item => item.name.toLowerCase().includes(query));
   renderResults(results);
-  closeBnt.style.display = "inline";
+  if (query) {
+    closeBnt.style.display = "inline";
+  } else {
+    closeBnt.style.display = "none";
+  }
 });
 
 function renderResults(results) {

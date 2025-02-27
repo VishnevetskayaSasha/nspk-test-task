@@ -76,6 +76,9 @@
   margin-top: 40px;
 }
 .advantages__cards {
+  
+}
+.list{
   display: flex;
   list-style: none;
   justify-content: space-between;
@@ -111,11 +114,7 @@
 .numbers {
 }
 .numbers__cards {
-  display: flex;
-  list-style: none;
-  justify-content: space-between;
-  padding: 0;
-  margin: 0;
+  
 }
 .numbers__item {
   width: 256px;
@@ -152,12 +151,8 @@
 .stock-mechanics {
 }
 .stock-mechanics__cards {
-  display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
 }
 .stock-mechanics__item {
   box-sizing: border-box;
@@ -204,6 +199,7 @@
 .cards-content_shadow{
   box-shadow: 0px 0px 100px 0px #00000014;
   border-radius: 20px;
+  width: 1500px;
 }
 .successful-cases__cards {
   display: grid;
@@ -258,11 +254,7 @@
 .promotion {
 }
 .promotion__cards {
-  display: flex;
-  list-style: none;
-  justify-content: space-between;
-  padding: 0;
-  margin: 0;
+  
 }
 .promotion__item {
   width: 346px;
@@ -322,12 +314,8 @@
   display: none;
 }
 .banks__cards {
-  display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
 }
 .banks__item {
   width: 170px;
@@ -337,8 +325,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  outline: 1px solid transparent;
+  transition: all .6s;
 }
 .banks__link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
 }
 .banks__img {
 }
@@ -390,6 +385,10 @@
   .button:hover{
     background-color: #4d35af94;
     color: #FFFFFF
+  }
+  .banks__item:hover{
+    outline: 1px solid #6A50D2;
+    cursor: pointer;
   }
 }
 
