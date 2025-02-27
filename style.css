@@ -15,7 +15,7 @@
   background: linear-gradient(180deg, #EAE9FF 0%, rgba(255, 255, 255, 0.5) 100%);
 }
 .wrapper {
-  width: 1120px;
+  max-width: 1120px;
   margin: 0 auto;
 }
 .main-banner__content {
@@ -76,6 +76,7 @@
   margin-top: 40px;
 }
 .advantages__cards {
+  grid-template-columns: repeat(4, 265px);
   
 }
 .list{
@@ -85,6 +86,13 @@
   padding: 0;
   margin: 0;
 }
+.list-grid{
+  display: grid;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+}
 .advantages__item {
   box-sizing: border-box;
   outline: 1px solid transparent;
@@ -92,7 +100,7 @@
   background-color: #F8F8F8;
   border-radius: 20px;
   padding: 24px 20px;
-  transition: all .6s;
+  transition: border-radius .6s, outline .6s;
 }
 .advantages__item-img {
 }
@@ -157,12 +165,13 @@
 .stock-mechanics__item {
   box-sizing: border-box;
   width: 550px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 48px auto;
   gap: 16px;
   background-color: #F8F8F8;
   border-radius: 20px;
   padding: 24px 20px;
-  transition: all 0.6s;
+  transition: opacity .6s, background-color .6s;
 }
 .text-mini_stock-mechanics{
   margin-bottom: 12px;
@@ -196,19 +205,20 @@
 }
 .successful-cases {
 }
+.wrapper_slider{
+  width: 1500px;
+  margin-right: 0;
+  margin-left: calc((100% - 1120px) / 2);
+  
+}
 .cards-content_shadow{
   box-shadow: 0px 0px 100px 0px #00000014;
   border-radius: 20px;
-  width: 1500px;
 }
 .successful-cases__cards {
-  display: grid;
   grid-template-columns: repeat(5, 360px);
   padding: 0 0 20px;
-  margin: 0;
-  list-style: none;
   gap: 20px;
-  justify-content: space-between;
   white-space: nowrap;
   overflow: auto;
   border-radius: 20px;
@@ -289,7 +299,7 @@
 }
 .search-container {
   position: relative; 
-  width: 550px;
+  max-width: 550px;
   height: 56px;
   margin: 36px auto 32px;
 }
@@ -389,6 +399,214 @@
   .banks__item:hover{
     outline: 1px solid #6A50D2;
     cursor: pointer;
+  }
+}
+@media screen and (max-width: 1919px) {
+  .wrapper_slider{
+    width: calc(100% - (100% - 1120px) / 2);
+  }
+}
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    max-width: 728px;
+  }
+  .main-banner__content{
+    flex-direction: column;
+  }
+  .title_main{
+    line-height: 1.2;
+  }
+  .text_main-banner {
+    margin: 20px 0 34px;
+  }
+  .main-banner__img{
+    width: 455px;
+    align-self: center;
+  }
+  .advantages__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .advantages__item{
+    width: 354px;
+  }
+  .numbers__cards{
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+  .numbers__item{
+    width: 348px;
+  }
+  .title_bold{
+    margin-bottom: 7px;
+  }
+  .banner__content{
+    flex-wrap: wrap;
+  }
+  .banner__img{
+    margin: 0 auto;
+    padding-bottom: 24px;
+  }
+  .stock-mechanics__item{
+    width: 354px;
+  }
+  .stock-mechanics__img{
+    width: 48px;
+  }
+  .stock-mechanics__text-content {
+    width: 250px;
+  }
+  .wrapper_slider{
+    margin-left: calc((100% - 728px) / 2);
+    width: calc(100% - (100% - 728px) / 2);
+  }
+  .successful-cases__cards{
+    grid-template-columns: repeat(5, 292px);
+    padding: 0;
+  }
+  .successful-cases__item{
+    width: 292px;
+    white-space: normal;
+  }
+  .successful-cases__cards::-webkit-scrollbar {
+    height: 0;
+    border-radius: 10px;
+    background-color: #E1E1E1;
+  }
+  .promotion__cards {
+    flex-direction: column;
+    gap: 40px;
+  } 
+  .promotion__item{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 48px auto;
+    gap: 16px
+  }
+  .title_promotion{
+    margin: 0;
+  }
+  .text_promotion {
+    text-align: start;
+  }
+  .banks__cards {
+    gap: 16px;
+    justify-content: center;
+  }
+  .search-container {
+  margin: 32px auto;
+  }
+}
+@media screen and (max-width: 770px) {
+  .wrapper{
+    margin: 0 20px;
+  }
+  .advantages__cards{
+    overflow-x: scroll;
+    scrollbar-width: none;
+  }
+  .advantages__cards{
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .advantages__item{
+    width: 268px;
+  }
+  .wrapper_advantages-scroll{
+    margin: 0 0 0 20px;
+    max-width: 750px;
+  }
+  .numbers__item{
+    width: 256px;
+  }
+  .successful-cases__cards {
+    grid-template-columns: repeat(5, 268px);
+  }
+  .successful-cases__item{
+    width: 268px;
+  }
+  .wrapper_slider{
+    margin-left: 28px;
+    width: calc(100% - 28px);
+  }
+  .stock-mechanics__item{
+    width: 100%;
+  }
+  .stock-mechanics__text-content{
+    width: 100%;
+  }
+  .banks__item{
+    width: 159px;
+  }
+}
+@media screen and (max-width: 583px) {
+  .numbers__item{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 455px) {
+  .main-banner__content{
+    padding: 48px 0;
+  }
+  .title_main{
+    font-size: 32px;
+    line-height: 1.25;
+  }
+  .text{
+    font-size: 16px;
+    line-height: 1.37;
+  }
+  .text-mini{
+    font-size: 14px;
+    line-height: 1.42;
+  }
+  .title_bold {
+    margin-bottom: 9px;
+  }
+  .button-box{
+    flex-direction: column;
+  }
+  .button{
+    display: block;
+    text-align: center;
+  }
+  .main-banner__img{
+    width: 335px;
+  }
+  .section {
+    padding: 48px 0;
+  }
+  .title_second{
+    font-size: 24px;
+  }
+  .cards-content {
+    margin-top: 32px;
+  }
+  .banner__text-content {
+    padding: 20px;
+  }
+  .banner__list {
+    padding-left: 18px;
+  }
+  .banner__img{
+    width: 322px;
+    height: 292px;
+    padding-bottom: 0;
+  }
+  .stock-mechanics__item{
+    grid-template-columns: auto;
+  }
+  .stock-mechanics__text-content{
+    width: 100%;
+  }
+  .text-mini_stock-mechanics{
+    font-size: 16px;
+    line-height: 1.37;
+  }
+  .title_third {
+    font-size: 18px;
+  }
+  .title_center{
+    text-align: start;
   }
 }
 
