@@ -212,7 +212,7 @@
   
 }
 .cards-content_shadow{
-  box-shadow: 0px 0px 100px 0px #00000014;
+  box-shadow: 0px 0px 100px 0px #00000012;
   border-radius: 20px;
 }
 .successful-cases__cards {
@@ -326,6 +326,7 @@
 .banks__cards {
   flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
 }
 .banks__item {
   width: 170px;
@@ -502,7 +503,6 @@
   }
   .advantages__cards{
     overflow-x: scroll;
-    scrollbar-width: none;
   }
   .advantages__cards{
     grid-template-columns: repeat(4, 1fr);
@@ -535,6 +535,7 @@
   }
   .banks__item{
     width: 159px;
+    height: 74px;
   }
 }
 @media screen and (max-width: 583px) {
@@ -598,7 +599,7 @@
   .stock-mechanics__text-content{
     width: 100%;
   }
-  .text-mini_stock-mechanics{
+  .text-mini_mob{
     font-size: 16px;
     line-height: 1.37;
   }
@@ -607,6 +608,16 @@
   }
   .title_center{
     text-align: start;
+  }
+  .wrapper_slider .title_second {
+    max-width: 335px;
+    margin-left: -8px;
+  }
+  .successful-cases__item .title_third{
+    font-size: 20px;
+  }
+  .search-container{
+    margin: 24px auto 32px;
   }
 }
 
