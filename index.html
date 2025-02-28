@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>НСПК Тестовое задание</title>
-  <link rel="stylesheet" href="style.css">
   <link type="image/x-icon" href="./img/favicon.ico" rel="shortcut icon">
   <link type="Image/x-icon" href="./img/favicon.ico" rel="icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="main">
@@ -170,9 +171,9 @@
     <section class="successful-cases section">
       <div class="wrapper_slider">
         <h2 class="title title_second">Примеры успешных  кейсов</h2>
-        <div class="cards-content cards-content_shadow">
-          <ul class="list-grid successful-cases__cards">
-            <li class="successful-cases__item">
+        <div class="swiper cards-content cards-content_shadow">
+          <ul class="swiper-wrapper list-grid successful-cases__cards">
+            <li class="swiper-slide successful-cases__item">
               <img class="successful-cases__img" src="./img/shopping-basket.svg" alt="Значок карзины для продуктов">
               <h3 class="title title_third title_margin">Супермаркеты</h3>
               <ul class="successful-cases__text-list">
@@ -190,7 +191,7 @@
                 </li>
               </ul>
             </li>
-            <li class="successful-cases__item">
+            <li class="swiper-slide successful-cases__item">
               <img class="successful-cases__img" src="./img/t-shirt.svg" alt="Значок футболки">
               <h3 class="title title_third title_margin">Одежда, обувь, аксессуары</h3>
               <ul class="successful-cases__text-list">
@@ -205,7 +206,7 @@
                 </li>
               </ul>
             </li>
-            <li class="successful-cases__item">
+            <li class="swiper-slide successful-cases__item">
               <img class="successful-cases__img" src="./img/cup.svg" alt="Значок чашки">
               <h3 class="title title_third title_margin">Кафе и рестораны</h3>
               <ul class="successful-cases__text-list">
@@ -223,7 +224,7 @@
                 </li>
               </ul>
             </li>
-            <li class="successful-cases__item">
+            <li class="swiper-slide successful-cases__item">
               <img class="successful-cases__img" src="./img/plant.svg" alt="Значок цветка в горшке">
               <h3 class="title title_third title_margin">Для дома и сада</h3>
               <ul class="successful-cases__text-list">
@@ -238,7 +239,7 @@
                 </li>
               </ul>
             </li>
-            <li class="successful-cases__item">
+            <li class="swiper-slide successful-cases__item">
               <img class="successful-cases__img" src="./img/beach.svg" alt="Значок зонтика">
               <h3 class="title title_third title_margin">Гостиницы</h3>
               <ul class="successful-cases__text-list">
@@ -295,5 +296,6 @@
     </section>
   </div>
   <script type="module" src="./index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>

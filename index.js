@@ -43,3 +43,11 @@ closeBnt.addEventListener("click", () => {
 })
 
 renderResults(bancs);
+
+
+const swiper = new Swiper('.swiper', {
+  slidesPerView: "auto",
+  spaceBetween: 20,
+  freeMode: true,
+  grabCursor: true,
+});
